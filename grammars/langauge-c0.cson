@@ -1,0 +1,95 @@
+'scopeName': 'source.c0'
+'name': 'C0'
+'fileTypes': ['c0']
+'patterns': [
+  {
+    'comment': 'pragmas'
+    'name': 'storage.modifier.import.entity.name.type.class.c0'
+    'begin': '^#'
+    'end': '\n'
+  }
+  {
+    'comment': 'string literal'
+    'name': 'string.quoted.single.c0'
+    'begin': '\''
+    'end': '\''
+  }
+  {
+    'comment': 'string literal'
+    'name': 'string.quoted.double.c0'
+    'begin': '"'
+    'end': '"'
+  }
+  {
+    'comment': 'comment line'
+    'name': 'comment.line.double-slash.c0'
+    'begin': '//(?!@)'
+    'end': '\\n'
+  }
+  {
+    'comment': 'comment line'
+    'name': 'comment.multi-line.c0'
+    'begin': '/\\*'
+    'end': '\\*/'
+  }
+  {
+    'comment': 'contracts'
+    'name': 'keyword.contracts.c0'
+    'match': '//@(?:requires|ensures|loop_invariant|assert)'
+  }
+  {
+    'comment': 'contract keywords'
+    'name': 'keyword.contracts.result.c0'
+    'match': '\\\\(result|old)'
+  }
+  {
+    'comment': 'types'
+    'name': 'support.type.c0'
+    'match': '\\b(struct|int|bool|char|string|void)\\s*(\\*|[\\d?]|\\s)'
+  }
+  {
+    'comment': 'functions'
+    'name': 'support.function.entity.name.tag.c0'
+    'match': '\\b(\\w+)\\s*(?=\\()\\b'
+  }
+  {
+    'comment': 'return'
+    'name': 'keyword.c0'
+    'match': '\\breturn\\b'
+  }
+  {
+    'comment': 'flow control conditional'
+    'name': 'keyword.control.conditional.c0'
+    'match': '\\b(if|else)\\b'
+  }
+  {
+    'comment': 'flow control loop'
+    'name': 'keyword.control.repeat.c0'
+    'match': '\\b(for|while)\\b'
+  }
+  {
+    'comment': 'flow control statement'
+    'name': 'keyword.control.statement.c0'
+    'match': '\\b(break)\\b'
+  }
+  {
+    'comment': 'comparison operator'
+    'name': 'keyword.operator.comparison.c0'
+    'match': '(<\\=|>\\=|<|>|<>|\\=)'
+  }
+  {
+    'comment': 'arithmetic operator'
+    'name': 'keyword.operator.arithmetic.c0'
+    'match': '(\\+|\\-|\\*|/(?!/|@)|<<|>>)'
+  }
+  {
+    'comment': 'boolean constants'
+    'name': 'support.constant.bool.c0'
+    'match': '\\b(true|false)\\b'
+  }
+  {
+    'comment': 'numerical constants'
+    'name': 'support.constant.number.c0'
+    'match': '\\b(\\d+)\\b'
+  }
+]

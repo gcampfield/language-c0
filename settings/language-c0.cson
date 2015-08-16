@@ -1,0 +1,17 @@
+'.source.0':
+  'editor':
+    'commentStart': '// '
+    'increaseIndentPattern': '(?x)
+       ^ .* \\{ [^}"\']* $
+      |^ .* \\( [^\\)"\']* $
+      |^ \\s* (public|private|protected): \\s* $
+      |^ \\s* @(public|private|protected) \\s* $
+      |^ \\s* \\{ \\} $
+      '
+    'decreaseIndentPattern': '(?x)
+       ^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\}
+      |^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\)
+      |^ \\s* (public|private|protected): \\s* $
+      |^ \\s* @(public|private|protected) \\s* $
+      '
+    'foldEndPattern': '(?<!\\*)\\*\\*/|^\\s*\\}'
