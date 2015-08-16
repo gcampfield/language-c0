@@ -1,6 +1,6 @@
 {
   "name": "language-c0",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Syntax highlighting for C0",
   "repository": "https://github.com/gcampfield/language-c0",
   "license": "MIT",
