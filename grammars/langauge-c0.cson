@@ -27,15 +27,20 @@
     'end': '\\n'
   }
   {
-    'comment': 'comment line'
+    'comment': 'comment multi-line'
     'name': 'comment.multi-line.c0'
-    'begin': '/\\*'
+    'begin': '/\\*(?!@)'
     'end': '\\*/'
   }
   {
-    'comment': 'contracts'
+    'comment': 'contracts line'
     'name': 'keyword.contracts.c0'
     'match': '//@(?:requires|ensures|loop_invariant|assert)'
+  }
+  {
+    'comment': 'contracts multi-line'
+    'name': 'keyword.contracts.c0'
+    'match': '/\\*@(?:requires|ensures|loop_invariant|assert)|@|\\*/'
   }
   {
     'comment': 'contract keywords'
