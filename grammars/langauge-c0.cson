@@ -95,6 +95,6 @@
   {
     'comment': 'numerical constants'
     'name': 'support.constant.number.c0'
-    'match': '\\b(\\d+)\\b'
+    'match': '\\b(\\d+)\\b|\\b(0x[0-9A-Fa-f]{,8})\\b'
   }
 ]
