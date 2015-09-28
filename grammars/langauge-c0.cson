@@ -12,13 +12,13 @@
     'comment': 'string literal'
     'name': 'string.quoted.single.c0'
     'begin': '\''
-    'end': '\''
+    'end': '(?<![^\\\\]\\\\)\''
   }
   {
     'comment': 'string literal'
     'name': 'string.quoted.double.c0'
     'begin': '"'
-    'end': '"'
+    'end': '(?<![^\\\\]\\\\)\"'
   }
   {
     'comment': 'comment line'
@@ -45,12 +45,12 @@
   {
     'comment': 'contract keywords'
     'name': 'keyword.contracts.result.c0'
-    'match': '\\\\(result|old)'
+    'match': '\\\\(result|length)'
   }
   {
     'comment': 'types'
     'name': 'support.type.c0'
-    'match': '\\b(struct|int|bool|char|string|void)\\s*(\\*|[\\d?]|\\s)'
+    'match': '\\b(struct|int|bool|char|string|void)\\s*(\\*|\\[\\d?])?\\s'
   }
   {
     'comment': 'functions'
