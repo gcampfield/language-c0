@@ -92,7 +92,6 @@
     'name': 'support.constant.bool.c0'
     'match': '\\b(true|false)\\b'
   }
-  }
   {
     'comment': 'pointer constants'
     'name': 'support.constant.pointer.c0'
