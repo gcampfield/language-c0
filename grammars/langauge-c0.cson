@@ -92,6 +92,12 @@
     'name': 'support.constant.bool.c0'
     'match': '\\b(true|false)\\b'
   }
+  }
+  {
+    'comment': 'pointer constants'
+    'name': 'support.constant.pointer.c0'
+    'match': '\\bNULL\\b'
+  }
   {
     'comment': 'numerical constants'
     'name': 'support.constant.number.c0'
