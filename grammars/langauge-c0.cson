@@ -45,7 +45,7 @@
   {
     'comment': 'contract keywords'
     'name': 'keyword.contracts.result.c0'
-    'match': '\\\\(result|length)'
+    'match': '\\\\(result|length|hastag)'
   }
   {
     'comment': 'types'
