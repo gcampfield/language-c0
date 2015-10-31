@@ -40,17 +40,17 @@
   {
     'comment': 'contracts multi-line'
     'name': 'keyword.contracts.c0'
-    'match': '/\\*@(?:requires|ensures|loop_invariant|assert)|@|\\*/'
+    'match': '/\\*@(?:requires|ensures|loop_invariant|assert)|@\\s*\\*/'
   }
   {
     'comment': 'contract keywords'
-    'name': 'keyword.contracts.result.c0'
-    'match': '\\\\(result|length|hastag)'
+    'name': 'keyword.contracts.keywords.c0'
+    'match': '\\\\(result|length)'
   }
   {
     'comment': 'types'
     'name': 'support.type.c0'
-    'match': '\\b(struct|int|bool|char|string|void)\\s*(\\*|\\[\\d?])?\\s'
+    'match': '\\b(struct|int|bool|char|string|void)\\s*\\*?\\s*\\([])?\\s'
   }
   {
     'comment': 'functions'
