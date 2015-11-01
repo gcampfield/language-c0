@@ -50,12 +50,7 @@
   {
     'comment': 'types'
     'name': 'support.type.c0'
-    'match': '\\b(int|bool|char|string|void)\\s*\\*?\\s*(\\[])?(?!:\\w)'
-  }
-  {
-    'comment': 'custom types'
-    'name': 'support.type.c0'
-    'match': '\\b[\\w-]+_t\\b'
+    'match': '\\b([\\w-]+_t|int|bool|char|string|void)\\s*\\*?\\s*(\\[])?(?!\\w)'
   }
   {
     'comment': 'structs and typedefs'
